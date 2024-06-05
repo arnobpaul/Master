@@ -20,7 +20,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'TechVJBot')
 API_ID = int(environ.get('API_ID', '21114052'))
 API_HASH = environ.get('API_HASH', '4e99ffb511eb4c3e2dae1105549a993a')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6939455134:AAFBle-l1i0mas0x4o2F80yYsV4nmdbcoa4")
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
@@ -52,7 +52,7 @@ FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Arnab:Pal@cluster0.fo9esll.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Arnab")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'techvjcollection')
 
